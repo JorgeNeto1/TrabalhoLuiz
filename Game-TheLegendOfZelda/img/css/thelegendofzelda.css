@@ -17,6 +17,10 @@ body {
     align-items: center;
     min-height: 100vh;
   }
+
+  #backzelda{
+    background-image: url(img/desktop-6.jpg);
+  }
   
   .game-container {
     background-color: white;

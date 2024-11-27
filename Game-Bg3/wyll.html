@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyll</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url('cidade.png') no-repeat center center fixed; /* Define cidade.png como background */
+            background-size: cover; /* Faz a imagem cobrir toda a área da tela */
+            z-index: -1; /* Coloca a imagem atrás do container */
+        }
+
+        .game-container {
+            background-color: rgba(51, 51, 51, 0.8); /* Cor de fundo semi-transparente */
+            padding: 40px; /* Aumenta o preenchimento */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra do container */
+            max-width: 900px; /* Largura máxima do container aumentada */
+            margin: 20px auto; /* Centraliza o container e adiciona margem */
+            display: flex;
+            flex-direction: column; /* Alinha os itens em coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            position: relative; /* Necessário para posicionar a seta */
+            z-index: 1; /* Coloca o container acima do fundo */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px; /* Margem abaixo do título */
+        }
+
+        img {
+            max-width: 350px; /* Ajuste o tamanho da imagem para 350px */
+            margin: 20px 0; /* Margem vertical para espaçamento */
+        }
+
+        p {
+            width: 100%;
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: white; /* Cor do texto */
+            text-align: justify; /* Justifica o texto */
+        }
+
+        .back-button {
+            position: absolute; /* Posiciona a seta no canto */
+            top: 20px; /* Distância do topo */
+            left: 20px; /* Distância da esquerda */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        .back-button img {
+            width: 30px; /* Ajuste o tamanho da seta */
+            height: auto; /* Mantém a proporção da seta */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="game-container">
+            <a href="index.html" class="back-button">
+                <img src="arrow.png" alt="Voltar"> <!-- Imagem da seta -->
+            </a>
+            <h1>Wyll</h1> <!-- Título posicionado acima da imagem -->
+            <img src="./wyll.png" alt="Wyll"> <!-- Imagem do Wyll -->
+            <p>
+                Wyll é um charmoso e habilidoso espadachim, conhecido como o "Blade of Frontiers" em Baldur's Gate 3. 
+                Apesar de sua reputação como um herói lendário, Wyll carrega um segredo sombrio: um pacto com um patrono 
+                demoníaco que lhe concedeu seus poderes mágicos. Ele luta para equilibrar sua busca por glória e justiça 
+                com as demandas cada vez mais complicadas de seu patrono. Wyll é um personagem cativante que explora os temas 
+                de sacrifício, moralidade e o custo do poder, oferecendo aos jogadores uma narrativa rica em escolhas emocionais 
+                e éticas.
+            </p>
+        </div>
+    </main>
+</body>
+</html>

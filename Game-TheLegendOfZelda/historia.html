@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Legend Of Zelda</title>
+  <link rel="stylesheet" href="css/thelegendofzelda.css">
+  <script src="scriptzelda.js"></script>
+  <link rel="icon" href="img/pngegg (1).png" type="image/x-icon">
+ 
+</head>
+<body id = "backzelda">
+    
+  <div id = "alitexto" class="game-container">
+    <h1>Historia</h1>
+    <div>
+        <h3>Mil anos antes de Breath of the Wild</h3> 
+        A história começa, na verdade, cerca de 10 mil anos antes. Segundo as lendas passadas de geração em geração, uma grande guerra aconteceu entre as forças de Ganon e Hyrule — 
+        este lado defendido não só pelo exército real, como também pelas diferentes raças que habitam o reino.
+        Entre os aliados estavam os Sheikah, uma tribo que trabalha a favor da família real pelas sombras desde tempos muito antigos. Usando uma mistura de magia 
+        e tecnologia, eles desenvolvem um exército de autômatos chamados de Guardiões, além de quatro enormes fortalezas armadas: as Divine Beasts (“Bestas Divinas”, em tradução livre).
+        <br><p></p>
+        Junto da princesa com seus poderes divinos, por ser descendente da Deusa Hylia, e de um rapaz com uma espada capaz de destruir o mal, Hyrule selou Ganon e acabou com sua ameaça por cerca de 10 mil anos. Mas nem tudo estava resolvido.
+
+    Com medo do imenso poder dos Sheikah, o Rei de Hyrule determinou que sua tecnologia fosse enterrada. Parte da tribo concordou e foi viver uma vida simples no vilarejo de Kakariko, mas outra, se sentindo traída pela família real, se separou dos demais e jurou apoio a Ganon, dando origem ao Clã Yiga.
+    </div>
+    <div>
+        <h3>100 anos atrás: a Grande Calamidade</h3> 
+        Hyrule se manteve em relativa paz por 10 mil anos, até que um profeta prevê o eventual retorno do monstro das lendas, agora chamado de Calamity Ganon: uma criatura de puro Malice, uma substância formada por maldade e ódio. 
+        Segundo este misterioso adivinho, no entanto, há uma esperança: as construções dos Sheikah que ajudaram a vencer a guerra milênios atrás.
+        <br><p></p>
+        O Rei Rhoam Bosphoramus Hyrule decide ordenar que as escavações comecem, mas também apela para sua filha, Zelda, para que ela treine e desperte os poderes que supostamente tem, como uma descendente da Deusa Hylia. 
+        Com medo de não ser capaz de atender às expectativas, ela passa a estudar a misteriosa tecnologia escavada ao lado dos Sheikah, em particular sua amiga Impa e os cientistas Purah e Robbie.
+        <br><p></p>
+        Enquanto isso, um jovem rapaz, Link, que segue os passos de seu pai como cavaleiro, se destaca no exército real após retirar do pedestal a Master Sword, a espada citada nas lendas capaz de selar o mal. 
+        Ele é nomeado guarda-costas de Zelda e passa a acompanhá-la em sua jornada. Para ela, no entanto, o sucesso do garoto é uma lembrança constante de seu próprio fracasso como filha e como princesa.
+        <br><p></p>
+        Enquanto ela continua seu treinamento, rezando nas Fontes do Poder e da Coragem, a dupla viaja aos quatro cantos de Hyrule em busca de indivíduos de algumas das principais raças para serem os novos pilotos das Divine Beasts.
+         Os escolhidos, chamados de Campeões, são Urbosa, chefe dos Gerudo; Revali, ágil arqueiro dos Rito; Daruk, guerreiro dos Goron; e Mipha, a princesa dos Zora. Link é escolhido como o quinto.
+        <br><p></p>
+        Todas as peças pareciam estar preparadas para o grande combate, exceto os poderes de Zelda. Sua última esperança é a Fonte da Sabedoria, onde só poderia visitar ao completar 17 anos.
+        É o que ela faz em seu aniversário, acompanhada de Link e dos quatro Campeões, mas mais uma vez suas preces parecem ignoradas.
+        
+    </div>
+    </div>
+
+  <script>
+    // Selecionando as abas e conteúdos
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove a classe ativa de todas as abas e conteúdos
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active-tab-content'));
+
+        // Adiciona a classe ativa na aba e no conteúdo correspondentes
+        tab.classList.add('active');
+        const contentId = tab.id.replace('tab', 'content');
+        document.getElementById(contentId).classList.add('active-tab-content');
+      });
+    });
+
+    // Definir a primeira aba como ativa por padrão
+    document.getElementById('tab-history').classList.add('active');
+    document.getElementById('content-history').classList.add('active-tab-content');
+  </script>
+</body>
+</html>

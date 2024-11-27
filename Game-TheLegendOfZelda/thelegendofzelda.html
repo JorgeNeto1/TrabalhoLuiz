@@ -6,27 +6,34 @@
   <title>The Legend Of Zelda</title>
   <link rel="stylesheet" href="css/thelegendofzelda.css">
   <script src="scriptzelda.js"></script>
+  <script src="script.js"></script>
   <link rel="icon" href="css/img/pngegg (1).png" type="image/x-icon">
  
 </head>
 <body id = "backzelda">
   <div class="game-container">
-    <img class="logo" src="css/img/ThemeTitle.png">
+    <img id="caixa3" class="logo" src="css/img/ThemeTitle.png">
 
     <!-- Abas para navegar entre conteúdo -->
-    <div class="tabs">
+    <div id = "caixa3" class="tabs">
       <div>
         <a><button onclick="abrirHistoria()">História</button></a>
       </div>
       <div>
-        <a><button onclick="abrirHistoria()">Cenários</button></a>
+        <a><button onclick="abrirCenario()">Cenários</button></a>
       </div>
       <div>
-        <a><button onclick="abrirHistoria()">Personagens</button></a>
+        <a><button onclick="abrirPersonagens()">Personagens</button></a>
       </div>
       <div>
         <a><button onclick="abrirGameplay()">Gameplays</button></a>
       </div>
+      <div>
+        <a><button onclick="abrirCuriosidade()">Curiosidades</button></a>
+      </div>
+    </div>
+    <div id="caixa3">
+      <a><button onclick="voltar()">Voltar ao Menu</button></a>
     </div>
 
     <!-- Conteúdo das abas -->

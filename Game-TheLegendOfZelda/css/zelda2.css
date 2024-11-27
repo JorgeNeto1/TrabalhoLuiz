@@ -21,6 +21,11 @@ body, html {
     min-height: 100vh;
     text-align: center;
   }
+  #titulos{
+    text-align: center;
+    font-size: 50px;
+    color: #00e4f5;
+  }
   
   /* Menu */
   .menu button {
@@ -28,14 +33,16 @@ body, html {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #ffcc00;
-    color: #000;
+    background-color: #00e4f5;;
+    color: #ffffff;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
   }
   
   .menu button:hover {
-    background-color: #ffaa00;
+    background-color: #11afb4;
   }
 
   .menu 
@@ -82,4 +89,5 @@ body, html {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     max-width: 800px;
     margin: 20px auto;
+    text-align:justify;
   }

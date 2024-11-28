@@ -1,0 +1,221 @@
+/* Estilos básicos */
+body {
+  cursor: url('DyingLightImages/cursor.cur') 1 1, auto;
+  background-image: url('DyingLightImages/Dying Light Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Caixa central com fundo transparente */
+.game-container {
+  background-color: rgba(0, 0, 0, 0); /* Fundo transparente */
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.character-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 200px; /* Aumenta a distância entre a imagem e o texto (50px a mais) */
+  margin-bottom: 40px; /* Mantém o espaço entre o nome, função e a descrição */
+}
+
+.character-header h1 {
+  font-size: 4em; /* Aumenta o tamanho do nome */
+  color: #fff;
+  margin-bottom: 25px; /* Dá mais espaço entre o nome e a função */
+}
+
+.character-role {
+  font-size: 1.6em; /* Aumenta o tamanho da função */
+  font-weight: normal;
+  color: #ddd;
+  margin-bottom: 40px; /* Dá mais espaço entre a função e a descrição */
+}
+
+.character-info {
+  max-width: calc(100% - 450px); /* Ajusta largura para que texto não invada a imagem */
+}
+
+.character-description {
+  margin-top: 20px;
+  font-size: 1.3em;
+  color: #ddd;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.character-img {
+  width: 250px !important; /* Reduzido para 250px */
+  height: 250px !important; /* Altura também ajustada para 250px */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajuste específico para a página história */
+body.page-historia .game-container {
+  top: 105px; /* Ajuste vertical */
+}
+
+/* Ajuste específico para a página gameplay */
+body.page-gameplay .game-container {
+  top: 115px; /* Ajuste vertical */
+}
+
+body.page-personagens .game-container {
+  top: 80px; /* Ajuste vertical */
+}
+
+/* Estilos das abas e navegação */
+.navigation {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-nav {
+  padding: 15px 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+  background-color: #482b61;
+  color: white;
+}
+
+/* Estilos para o título */
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Página História - aumento do tamanho da fonte */
+h1, p {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 20px; /* Alterando a fonte para 20px */
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Grid para os personagens */
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.character {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.character img {
+  width: 250px !important; /* A largura das imagens foi ajustada */
+  height: 250px !important; /* A altura das imagens foi ajustada */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.character img:hover {
+  transform: scale(1.1);
+}
+
+.character a {
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Estilos do video player */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.character-img {
+  width: 250px !important; /* Garante que a imagem do personagem seja sempre 250px */
+  height: 250px !important;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+video {
+  width: 90%; /* Aumentando a largura do video player */
+  max-width: 1000px; /* Ajuste para o tamanho maior */
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .characters-grid {
+      grid-template-columns: 1fr 1fr; /* 2 colunas em telas menores */
+  }
+
+  .btn-nav {
+      font-size: 1.2em;
+      padding: 12px 25px;
+  }
+
+  h1 {
+      font-size: 2.5em;
+  }
+
+  .character-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .character-info {
+      text-align: center;
+      max-width: 100%;
+  }
+
+  .character-img {
+      width: 250px;
+      height: 250px; /* Mantém a altura proporcional */
+  }
+}

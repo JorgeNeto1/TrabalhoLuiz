@@ -7,4 +7,8 @@ function toggleHistory(gameId) {
       historyDiv.style.display = 'block'; // Caso contrário, mostra a história
     }
   }
+  function voltarPaginaPrincipal1() 
+{
+    window.history.back() 
+}
   

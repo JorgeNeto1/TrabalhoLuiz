@@ -4,27 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Legend Of Zelda</title>
-  <link rel="stylesheet" href="img/css/thelegendofzelda.css">
+  <link rel="stylesheet" href="css/thelegendofzelda.css">
   <script src="scriptzelda.js"></script>
-  <link rel="icon" href="imgcss" type="image/x-icon">
+  <script src="script.js"></script>
+  <link rel="icon" href="css/img/pngegg (1).png" type="image/x-icon">
  
 </head>
-<body>
+<body id = "backzelda">
   <div class="game-container">
-    <h1>The Legend Of Zelda: Breath Of The Wild</h1>
+    <img id="caixa3" class="logo" src="css/img/ThemeTitle.png">
 
     <!-- Abas para navegar entre conteúdo -->
-    <div class="tabs">
-      <div class="tab" id="tab-history">História</div>
-      <div class="tab" id="tab-characters">Personagens</div>
+    <div id = "caixa3" class="tabs">
+      <div>
+        <a><button onclick="abrirHistoria()">História</button></a>
+      </div>
+      <div>
+        <a><button onclick="abrirCenario()">Cenários</button></a>
+      </div>
+      <div>
+        <a><button onclick="abrirPersonagens()">Personagens</button></a>
+      </div>
+      <div>
+        <a><button onclick="abrirGameplay()">Gameplays</button></a>
+      </div>
+      <div>
+        <a><button onclick="abrirCuriosidade()">Curiosidades</button></a>
+      </div>
+    </div>
+    <div id="caixa3">
+      <a><button onclick="voltar()">Voltar ao Menu</button></a>
     </div>
 
     <!-- Conteúdo das abas -->
     <div class="tab-content" id="content-history">
-      <h2>História do Jogo</h2>
-      <p>contando</p>
-      <p>a historia</p>
-      <p>do jogo</p>
+   
     </div>
 
     <div class="tab-content" id="content-characters">

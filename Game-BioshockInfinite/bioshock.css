@@ -2,7 +2,7 @@
 /* Estilos básicos */
 body {
   cursor: url('cursor.cur') 1 1, auto;
-  background-image: url('BSI.png'); /* Caminho relativo da imagem */
+  background-image: url('background.jpg'); /* Caminho relativo da imagem */
   background-size: cover; /* A imagem cobrirá toda a área */
   background-position: center; /* A imagem será centralizada */
   background-repeat: no-repeat; /* Impede que a imagem se repita */

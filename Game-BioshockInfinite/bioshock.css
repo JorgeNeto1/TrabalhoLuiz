@@ -1,114 +1,174 @@
+/* Estilos básicos */
+body {
+  cursor: url('cursor.cur') 1 1, auto;
+  background-image: url('background.jpg'); /* Caminho relativo da imagem */
+  background-size: cover; /* A imagem cobrirá toda a área */
+  background-position: center; /* A imagem será centralizada */
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  background-attachment: fixed; /* Torna o fundo fixo, não se move com o scroll */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh; /* Garante que o corpo sempre tenha altura suficiente */
+}
+
+.game-container {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+  margin: 50px auto; /* Centraliza horizontalmente com espaçamento vertical */
+  position: relative; /* Mantém o fluxo do layout */
+}
+
+/* Estilos das abas */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px;
+  cursor: url('pointer.cur'), pointer; 
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #2b3e61;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.active-tab-content {
+  display: block;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Estilos para os personagens */
+.character {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.character img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.character div {
+  flex: 1;
+}
+
+.character h3 {
+  margin: 0;
+  color: #222;
+  font-size: 1.5em;
+}
+
+.character p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1.1em;
+}
 
 /* Estilos básicos */
 body {
-  
-    cursor: url('cursor.cur') 1 1, auto;
-    background-image: url('BSI.png'); /* Caminho relativo da imagem */
-    background-size: cover; /* A imagem cobrirá toda a área */
-    background-position: center; /* A imagem será centralizada */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .game-container {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 900px;
-    text-align: center;
-  }
-  
-  /* Estilos das abas */
-  .tabs {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-  }
-  
-  .tab {
-    padding: 10px;
-    cursor: url('pointer.cur'), pointer; 
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  .tab:hover {
-    background-color: #482b61;
-    color: white;
-  }
-  
-  .tab-content {
-    display: none;
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .active-tab-content {
-    display: block;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 1.8em;
-    margin-top: 20px;
-  }
-  
-  p {
-    font-size: 1.1em;
-    line-height: 1.6;
-  }
-  
-  /* Estilos para os personagens */
-  .character {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fafafa;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .character img {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd;
-  }
-  
-  .character div {
-    flex: 1;
-  }
-  
-  .character h3 {
-    margin: 0;
-    color: #222;
-    font-size: 1.5em;
-  }
-  
-  .character p {
-    margin: 5px 0;
-    color: #555;
-    font-size: 1.1em;
-  }
-  
-  
-  
-  
+  cursor: url('cursor.cur') 1 1, auto;
+  background-image: url('background.jpg'); /* Substitua pelo fundo desejado */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh; /* Garante que o corpo sempre tenha altura suficiente */
+  overflow-y: auto; /* Mantém a barra de rolagem funcional */
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.menu button {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #005f8a;
+}
+
+/* Título */
+.titulo {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5em;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Contêiner de cenários */
+.cenario-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza as imagens horizontalmente */
+  gap: 20px; /* Espaçamento entre as imagens */
+  padding: 20px;
+}
+
+/* Estilo de cada imagem */
+.cenario-box img {
+  width: 80%; /* Largura adaptável */
+  max-width: 900px; /* Limita a largura máxima */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra nas imagens */
+  display: block;
+}
+
+

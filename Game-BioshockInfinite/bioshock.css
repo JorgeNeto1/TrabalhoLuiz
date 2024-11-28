@@ -3,7 +3,7 @@
 body {
   
     cursor: url('cursor.cur') 1 1, auto;
-    background-image: url('background.png'); /* Caminho relativo da imagem */
+    background-image: url('BSI.png'); /* Caminho relativo da imagem */
     background-size: cover; /* A imagem cobrirá toda a área */
     background-position: center; /* A imagem será centralizada */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -19,7 +19,7 @@ body {
   }
   
   .game-container {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);

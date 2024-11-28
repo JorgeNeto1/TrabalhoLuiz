@@ -4,6 +4,9 @@ function abrirCenarios() {
     window.location.href = "cenario.html"; 
   }
   
+  function abrirGameplay() {
+    window.location.href = "gameplay.html"; 
+  }
   
 
 function showSlide(index) {

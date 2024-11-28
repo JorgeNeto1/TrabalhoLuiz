@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenários</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url('cidade.png') no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .game-container3 {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            margin: 20px auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        .image-item {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .image-item img {
+            max-width: 400px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-item p {
+            width: 100%;
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .divider {
+            height: 2px;
+            background-color: gray;
+            margin: 30px 0;
+            width: 100%;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+        }
+
+        .back-button img {
+            width: 30px;
+            height: auto;
+        }
+
+        /* Fullscreen effect for images */
+        .fullscreen-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fullscreen-overlay img {
+            max-width: 80%;
+            max-height: 80%;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .fullscreen-overlay.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="game-container3">
+            <a href="index.html" class="back-button">
+                <img src="arrow.png" alt="Voltar">
+            </a>
+            <h1>Cenários</h1>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="cenario1.png" alt="Cenário 1" onclick="toggleFullscreen(this)">
+                    <p>Baldur's Gate, uma das cidades mais icônicas de Faerûn, é uma metrópole vibrante e cheia de contrastes no universo de Baldur's Gate 3. Localizada na Costa da Espada, é uma cidade-estado próspera, famosa por seu porto movimentado, onde mercadores de todas as partes de Faerûn negociam mercadorias exóticas e valiosas.
+
+                        A cidade é marcada por sua divisão social: os ricos e poderosos vivem na Alta Cidade, com mansões luxuosas e ruas bem cuidadas, enquanto os menos afortunados habitam a Baixa Cidade, um lugar mais caótico, repleto de tavernas, mercados e becos perigosos. Além disso, a Subterrânea é uma rede sombria de túneis e esgotos, lar de criminosos e segredos antigos.
+                        
+                        Baldur's Gate é também um ponto estratégico em Faerûn, com uma história repleta de intrigas políticas, disputas entre facções e conflitos sobrenaturais. Em BG3, a cidade desempenha um papel central na trama, envolvendo o jogador em sua complexa teia de alianças, traições e segredos mágicos, enquanto o caos provocado pelos Illithids ameaça sua segurança e equilíbrio.</p>
+                </div>
+                <div class="divider"></div>
+                <div class="image-item">
+                    <img src="cenario2.png" alt="Cenário 2" onclick="toggleFullscreen(this)">
+                    <p>Santuário Esmeralda é um refúgio pacífico e espiritual situado na vastidão selvagem de Faerûn, desempenhando um papel significativo em Baldur's Gate 3. Este local serve como lar para uma comunidade de druidas e seus seguidores, que se dedicam a preservar o equilíbrio natural e proteger o mundo contra forças que ameaçam a harmonia da natureza.
+
+                        O santuário é uma combinação de beleza natural e arquitetura rústica, cercado por árvores imponentes, riachos cristalinos e formações rochosas. No coração do santuário, encontra-se um círculo druídico sagrado, onde rituais e meditações são realizados. Apesar de sua aparência serena, o local enfrenta conflitos internos, com druidas lidando com a ameaça dos goblins que atacam a região e a tensão crescente entre seus próprios membros sobre como lidar com os refugiados tieflings que buscam abrigo.
+                        
+                        O Santuário Esmeralda não é apenas um local de descanso, mas também de escolhas difíceis, onde o jogador precisa decidir entre proteger os refugiados, honrar os desejos dos druidas ou trilhar um caminho próprio, moldando o destino dessa comunidade frágil em meio ao caos crescente.</p>
+                </div>
+                <div class="divider"></div>
+                <div class="image-item">
+                    <img src="cenario3.png" alt="Cenário 3" onclick="toggleFullscreen(this)">
+                    <p>Avernus é a primeira camada dos Nove Infernos de Baator, uma terra de desolação ardente e guerra eterna. Em Baldur's Gate 3, Avernus é apresentado como um plano caótico e cruel, marcado por vastas planícies de magma fervente, céus tingidos de vermelho e os ecos incessantes da Guerra Sangrenta, o conflito interminável entre demônios e diabos.
+
+                        Este plano infernal é governado pela arquidiaba Zariel, uma ex-arcanja caída que agora lidera os exércitos infernais em sua cruzada contra as forças demoníacas. Avernus é repleto de perigos: hordas de criaturas infernais, campos de batalha devastados e armadilhas mágicas. Aqui, almas condenadas vagam sem descanso, muitas vezes usadas como combustível literal para as máquinas de guerra infernais.
+                        
+                        Embora seja um lugar de desespero, Avernus também é uma terra de oportunidades para os ousados. Pactos podem ser forjados com diabos para obter poder, mas sempre a um custo terrível. Em BG3, Avernus desempenha um papel na história de personagens como Karlach e Wyll, cujas vidas estão profundamente conectadas a este reino infernal. É um local onde o jogador pode enfrentar dilemas éticos e testes de força e coragem, refletindo sobre os sacrifícios necessários para sobreviver em um lugar tão implacável.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fullscreen-overlay" id="fullscreenOverlay" onclick="toggleFullscreen()">
+            <img src="" alt="Fullscreen Image">
+        </div>
+    </main>
+    <script>
+        function toggleFullscreen(image) {
+            const overlay = document.getElementById('fullscreenOverlay');
+            const fullscreenImage = overlay.querySelector('img');
+            if (overlay.classList.contains('active')) {
+                overlay.classList.remove('active');
+                fullscreenImage.src = '';
+            } else {
+                overlay.classList.add('active');
+                fullscreenImage.src = image.src;
+            }
+        }
+    </script>
+</body>
+</html>

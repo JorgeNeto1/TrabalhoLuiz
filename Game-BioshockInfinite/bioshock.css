@@ -1,4 +1,3 @@
-
 /* Estilos básicos */
 body {
   cursor: url('cursor.cur') 1 1, auto;
@@ -26,91 +25,150 @@ body {
   position: relative; /* Mantém o fluxo do layout */
 }
 
+/* Estilos das abas */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px;
+  cursor: url('pointer.cur'), pointer; 
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #2b3e61;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.active-tab-content {
+  display: block;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Estilos para os personagens */
+.character {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.character img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.character div {
+  flex: 1;
+}
+
+.character h3 {
+  margin: 0;
+  color: #222;
+  font-size: 1.5em;
+}
+
+.character p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1.1em;
+}
+
+/* Estilos básicos */
+body {
+  cursor: url('cursor.cur') 1 1, auto;
+  background-image: url('background.jpg'); /* Substitua pelo fundo desejado */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh; /* Garante que o corpo sempre tenha altura suficiente */
+  overflow-y: auto; /* Mantém a barra de rolagem funcional */
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.menu button {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #005f8a;
+}
+
+/* Título */
+.titulo {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5em;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Contêiner de cenários */
+.cenario-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza as imagens horizontalmente */
+  gap: 20px; /* Espaçamento entre as imagens */
+  padding: 20px;
+}
+
+/* Estilo de cada imagem */
+.cenario-box img {
+  width: 80%; /* Largura adaptável */
+  max-width: 900px; /* Limita a largura máxima */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra nas imagens */
+  display: block;
+}
 
 
-
-  
-  /* Estilos das abas */
-  .tabs {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-  }
-  
-  .tab {
-    padding: 10px;
-    cursor: url('pointer.cur'), pointer; 
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  .tab:hover {
-    background-color: #482b61;
-    color: white;
-  }
-  
-  .tab-content {
-    display: none;
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .active-tab-content {
-    display: block;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 1.8em;
-    margin-top: 20px;
-  }
-  
-  p {
-    font-size: 1.1em;
-    line-height: 1.6;
-  }
-  
-  /* Estilos para os personagens */
-  .character {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fafafa;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .character img {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd;
-  }
-  
-  .character div {
-    flex: 1;
-  }
-  
-  .character h3 {
-    margin: 0;
-    color: #222;
-    font-size: 1.5em;
-  }
-  
-  .character p {
-    margin: 5px 0;
-    color: #555;
-    font-size: 1.1em;
-  }
-  
-  
-  
-  

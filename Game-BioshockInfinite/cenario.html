@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cenários - Bioshock Infinite</title>
+  <link rel="stylesheet" href="bioshock.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .carousel {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .carousel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .carousel button.prev {
+      left: 10px;
+    }
+
+    .carousel button.next {
+      right: 10px;
+    }
+
+    .carousel button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="titulo">Cenários de Bioshock Infinite</h1>
+
+    <div class="carousel">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="carousel-images">
+        <img src="cenarioCerto1.webp" alt="Cenário 1">
+        <img src="cenarioCerto2.webp" alt="Cenário 2">
+        <img src="cenario3.webp" alt="Cenário 3">
+      </div>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </main>
+
+  <script>
+    let currentIndex = 0;
+
+    function moveSlide(direction) {
+      const carousel = document.querySelector('.carousel-images');
+      const totalImages = carousel.children.length;
+
+      // Atualiza o índice atual
+      currentIndex += direction;
+
+      // Se passar do último slide, volta ao primeiro
+      if (currentIndex >= totalImages) {
+        currentIndex = 0;
+      }
+
+      // Se passar do primeiro slide para trás, vai para o último
+      if (currentIndex < 0) {
+        currentIndex = totalImages - 1;
+      }
+
+      // Move o carrossel
+      const slideWidth = carousel.children[0].clientWidth;
+      carousel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+  </script>
+</body>
+</html>

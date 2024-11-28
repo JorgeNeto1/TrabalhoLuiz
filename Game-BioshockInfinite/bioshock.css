@@ -1,32 +1,34 @@
 
 /* Estilos básicos */
 body {
-  
-    cursor: url('cursor.cur') 1 1, auto;
-    background-image: url('BSI.png'); /* Caminho relativo da imagem */
-    background-size: cover; /* A imagem cobrirá toda a área */
-    background-position: center; /* A imagem será centralizada */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .game-container {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 900px;
-    text-align: center;
-  }
+  cursor: url('cursor.cur') 1 1, auto;
+  background-image: url('BSI.png'); /* Caminho relativo da imagem */
+  background-size: cover; /* A imagem cobrirá toda a área */
+  background-position: center; /* A imagem será centralizada */
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  background-attachment: fixed; /* Torna o fundo fixo, não se move com o scroll */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh; /* Garante que o corpo sempre tenha altura suficiente */
+}
+
+.game-container {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+  margin: 50px auto; /* Centraliza horizontalmente com espaçamento vertical */
+  position: relative; /* Mantém o fluxo do layout */
+}
+
+
+
+
   
   /* Estilos das abas */
   .tabs {
